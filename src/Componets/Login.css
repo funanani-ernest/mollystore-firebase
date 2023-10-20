@@ -1,0 +1,57 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 60, 60);
+  background-image: url("../assets/IMAGE10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 83vh;
+}
+
+.login-section {
+  width: 500px;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.app-title {
+  text-align: center;
+}
+.input-filed {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sign-up-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+form div {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #f8adad;
+  padding: 10px 20px;
+  border: none;
+  color: rgb(92, 60, 60);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(130, 238, 48);
+}

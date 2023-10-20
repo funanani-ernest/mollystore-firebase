@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import './ProductDisplay.css'
-import { db } from "../src/Firebase";
+import { db } from "../Firebase";
 
 
 
@@ -24,6 +24,12 @@ const ProductDisplay = () => {
       console.error("Error fetching products:", error);
     }
   };
+  const handleAddToCart = (product) => {
+    const whatsappNumber = "0818836917"; // Replace with your WhatsApp number
+    const message = encodeURIComponent(`Hello! I'd like to buy ${product.image}`);
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+    window.open(whatsappLink, "_blank");
+  };
   
 
    
@@ -32,8 +38,8 @@ const ProductDisplay = () => {
     }, [])
 
   return (
-    <div >
-      <h2>Products</h2>
+    <div className="products" >
+      <h1 className="pro-header">Featured Products</h1>
 
        {loading ? (
         <p>Loading...</p>
@@ -46,7 +52,8 @@ const ProductDisplay = () => {
                 alt={product.name}
               />
               <p>{product.name}</p>
-              <p>{product.price}</p>
+              <p>Price: R{product.price}</p>
+              <button onClick={handleAddToCart}>Buy</button>
             </li>
           ))}
         </ul>

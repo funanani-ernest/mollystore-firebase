@@ -1,0 +1,54 @@
+/* /* Common styles for all screen sizes */
+.home {
+    background-image: url("../assets/IMAGE10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    height: 80vh;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+  }
+  
+  .home-content span {
+    margin-top: 140px;
+    font-size: 28px;
+    color: rgb(92, 60, 60);
+    margin-bottom: 26px;
+  }
+  
+  @media (max-width: 768px) {
+    .home-content span {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 576px) {
+    .home-content span {
+      position: relative;
+   margin-top: 110px;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+  
+  .navlink-customs {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f8adad;
+    text-decoration: none;
+    color:  rgb(92, 60, 60);
+  }
+  .navlink-customs:hover {
+    background-color: rgb(130, 238, 48);
+  }
+  
+  
