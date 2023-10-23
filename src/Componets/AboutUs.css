@@ -1,0 +1,20 @@
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+   padding-top: 90px;
+   padding-bottom: 10px;
+    font-size: 16px; /* Changed from 10px to a more readable size */
+    text-align: center;
+    page-break-before: always; /* Ensure the section starts on a new page */
+}
+
+.about-hearder {
+    font-size: 2em; 
+    margin-bottom: 10px;
+} 
+
+.about-us span {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}

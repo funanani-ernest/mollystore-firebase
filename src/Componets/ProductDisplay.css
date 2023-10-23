@@ -51,12 +51,17 @@
   width: 310px;
   height: 260px;
 }
-.product-card p{
+.product-card p {
   margin: 5px;
 }
 .pro-header {
-  color:  rgb(92, 60, 60);
+  color: rgb(92, 60, 60);
   font-weight: 300;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+  text-align: center;
+  margin-bottom: 40px;
+}
+.loading{
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}

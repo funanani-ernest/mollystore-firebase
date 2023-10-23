@@ -7,6 +7,7 @@ import Login from "./Componets/Login";
 import Signup from "./Componets/SignUp";
 import Header from "./Componets/Layout/Header";
 import Footer from "./Componets/Layout/Footer";
+import AboutUs from "./Componets/AboutUs";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
           </Route>
           <Route path="/products">
             <ProductDisplay/>
+          </Route>
+          <Route path="/aboutus">
+            <AboutUs/>
           </Route>
           <Route path="/upload">
             <ProductUpload />

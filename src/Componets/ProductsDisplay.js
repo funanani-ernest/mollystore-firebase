@@ -42,7 +42,7 @@ const ProductDisplay = () => {
       <h1 className="pro-header">Featured Products</h1>
 
        {loading ? (
-        <p>Loading...</p>
+        <p className="loading">Loading...</p>
       ) : (
         <ul className="product-list" >
           {products.map((product, index) => (

@@ -60,6 +60,11 @@ const Header = () => {
         <NavLink to="/products" className="navlink-custom">
           <span>Products</span>
         </NavLink>
+       
+
+        <NavLink to="aboutus" className="navlink-custom">
+          <span>About Us</span>
+        </NavLink>
         <div className="dropdown">
           Contact Us
           <div className="dropdown-content">
@@ -76,10 +81,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        <NavLink to="aboutUs" className="navlink-custom">
-          <span>About Us</span>
-        </NavLink>
 
         {isLoggedIn ? (
           <div className="logged-info">
