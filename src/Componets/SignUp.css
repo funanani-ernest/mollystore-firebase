@@ -34,3 +34,11 @@
     background-color: #f8adad;
     margin: 5px 0 10px 0;
 }
+
+@media (max-width: 768px) {
+    .signup-container {
+      padding: 20px;
+      width: auto;
+      max-width: auto;
+    }
+  }
